@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     siteName: "Cason Lamothe",
     images: [
       {
-        url: "/headshot.png",
-        width: 800,
-        height: 800,
-        alt: "Cason Lamothe",
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cason Lamothe Portfolio",
       },
     ],
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cason Lamothe | Builder. Operator. The guy who actually ships.",
     description: "Product designer and AI systems architect. See how I think, what I build, and why depth is the only strategy worth having.",
-    images: ["/headshot.png"],
+    images: ["/og-image.png"],
   },
 };
 
