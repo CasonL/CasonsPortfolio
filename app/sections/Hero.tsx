@@ -70,8 +70,16 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
   const body  = "text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-cream-100 md:text-5xl lg:text-6xl";
 
   const depthButton = (
-    <span className="relative inline-block align-bottom text-cream-100" style={{ textShadow: "0 4px 0 #c17a4b" }}>
-      depth
+    <span className="relative inline-block align-bottom">
+      <motion.span
+        onClick={scrollToWork}
+        className="pointer-events-auto inline-block cursor-pointer text-cream-100"
+        style={{ textShadow: "0 4px 0 #c17a4b" }}
+        whileHover={{ y: 2, textShadow: "0 2px 0 #c17a4b" }}
+        whileTap={{ y: 4, textShadow: "0 0 0 #c17a4b" }}
+      >
+        depth
+      </motion.span>
       <motion.span
         className="absolute left-1/2 top-full block -translate-x-1/2 pt-1 text-terracotta-500"
         animate={{ y: [0, 3, 0] }}
