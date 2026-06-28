@@ -159,8 +159,8 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
 
           {stage === 4 && (
             <motion.div style={{ opacity: closingOpacity, y: closingY }} className={wrap}>
-              <div className="max-w-4xl">
-                <p className={body}>With the focus <br/>of a monk.</p>
+              <div className="max-w-4xl -translate-y-12 md:translate-y-0">
+                <p className="text-balance text-5xl font-semibold leading-[1.1] tracking-tight text-cream-100 md:text-5xl lg:text-6xl">With the focus <br/>of a monk.</p>
                 <p className="mt-6 text-lg leading-relaxed text-sage-500 md:text-xl">
                   Or an ant. Depending on the task.
                 </p>
