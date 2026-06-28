@@ -14,7 +14,7 @@ const projects = [
     image: "/pitchiq-screenshot.png",
     stats: [
       { label: "Focus", value: "AI sales coaching" },
-      { label: "Stack", value: "Multi-agent LLM orchestration" },
+      { label: "Architecture", value: "Multi-agent LLM orchestration" },
       { label: "Outcome", value: "Scalable, human-like training" },
     ],
   },
@@ -28,7 +28,7 @@ const projects = [
     image: "/resume-screenshot.png",
     stats: [
       { label: "Focus", value: "AI-powered job matching" },
-      { label: "Stack", value: "Document generation + LLM reasoning" },
+      { label: "Architecture", value: "Document generation + LLM reasoning" },
       { label: "Outcome", value: "Minute-level turnaround" },
     ],
   },
