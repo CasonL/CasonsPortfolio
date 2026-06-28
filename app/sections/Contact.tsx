@@ -26,7 +26,7 @@ export function Contact() {
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="mailto:cason@example.com"
+              href="mailto:casonlamothe@gmail.com"
               className="group inline-flex items-center gap-3 rounded-full bg-terracotta-500 px-8 py-4 text-base font-semibold text-forest-950 transition-all hover:bg-amber-400 hover:shadow-lg hover:shadow-terracotta-500/20"
             >
               <Mail size={20} />
@@ -37,7 +37,7 @@ export function Contact() {
               />
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/cason-lamothe-7b1531302"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-cream-300/30 px-8 py-4 text-base font-medium text-cream-100 transition-all hover:border-cream-100 hover:bg-cream-100/5"
