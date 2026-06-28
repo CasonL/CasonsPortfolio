@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const highlights = [
-  "Founder of PitchIQ: built a multi-agent AI sales trainer from zero to launch",
-  "Ran a College Pro window cleaning franchise solo, hitting $42K in revenue at 23",
+  "Built PitchIQ from zero to launch while running a franchise and finishing a degree",
+  "Turned one cold email into $2K in sponsorship",
+  "Found one onboarding pattern across 60+ interviews that rewrote the product",
   "Grew MacEwan Speechleaders from 20 to 90+ members in two weeks as president",
-  "Secured $2,000 in sponsorship from a single cold outreach",
   "BCom in Management and Entrepreneurship, MacEwan University",
 ];
 
@@ -19,13 +19,13 @@ export function About() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
           >
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-sage-500">
               About
             </p>
             <h2 className="text-4xl font-semibold tracking-tight text-cream-100 md:text-5xl">
-              Builder. Operator. The guy who actually ships.
+              Hyperfocus as leverage.
             </h2>
           </motion.div>
 
@@ -33,22 +33,20 @@ export function About() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] as const }}
             className="flex flex-col justify-center"
           >
             <p className="mb-6 text-lg leading-relaxed text-cream-300">
-              I didn't start as a developer. I started by running a window
-              cleaning franchise at 23, knocking ~100 doors a day and figuring
-              out what makes people say yes. That experience taught me more
-              about products than any course did: if it doesn't create real
-              value for a real person, it doesn't matter how elegant the code is.
+              When I lock in, timelines compress. I ran a window cleaning
+              franchise at 23, then started building PitchIQ while running a
+              club and getting my degree. Built the product from zero to launch
+              while running that $42K franchise and finishing a BCom. One cold
+              email landed $2K in sponsorship. One pattern across 60+ interviews
+              rewrote the onboarding.
             </p>
             <p className="mb-10 text-lg leading-relaxed text-cream-300">
-              Now I build AI products that compress what used to take a team
-              into something one person can run. While building PitchIQ I ran
-              60+ customer discovery interviews in parallel, letting real user
-              feedback reshape the product as it was being built. I study the
-              problem until the solution feels obvious, then I move fast.
+              I don't just move fast; I move fast in the right direction. The
+              feedback loop is the product.
             </p>
 
             <ul className="space-y-4">
