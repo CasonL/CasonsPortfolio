@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        width: 1670,
+        height: 993,
         alt: "Cason Lamothe Portfolio",
       },
     ],
