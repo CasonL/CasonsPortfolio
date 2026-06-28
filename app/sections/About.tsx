@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 
 const highlights = [
-  "Product designer with systems-level AI architecture skills",
-  "Led teams as franchisee, club president, and project owner",
-  "Management degree with entrepreneurship minor",
-  "Builder of multi-agent LLM products that feel human",
-  "Obsessive about feedback loops, product impact, and people",
+  "Founder of PitchIQ: built a multi-agent AI sales trainer from zero to launch",
+  "Ran a College Pro franchise solo, hitting $42K in revenue in one season",
+  "Grew MacEwan Speechleaders from 20 to 90+ members in two weeks as president",
+  "Secured $2,000 in sponsorship from a single cold outreach",
+  "BCom in Management and Entrepreneurship, MacEwan University",
 ];
 
 export function About() {
@@ -25,7 +25,7 @@ export function About() {
               About
             </p>
             <h2 className="text-4xl font-semibold tracking-tight text-cream-100 md:text-5xl">
-              A brain built for problems, people, and product.
+              Builder. Operator. The guy who actually ships.
             </h2>
           </motion.div>
 
@@ -37,14 +37,17 @@ export function About() {
             className="flex flex-col justify-center"
           >
             <p className="mb-6 text-lg leading-relaxed text-cream-300">
-              I'm deeply introspective, always thinking about how my work
-              lands, how it affects people, and how to make it better. That
-              loop is my superpower. It makes me a strong designer, a thoughtful
-              architect, and a leader who actually listens.
+              I didn't start as a developer. I started by running a painting
+              franchise at 21, knocking ~100 doors a day and figuring out what
+              makes people say yes. That experience taught me more about
+              products than any course did: if it doesn't create real value for
+              a real person, it doesn't matter how elegant the code is.
             </p>
             <p className="mb-10 text-lg leading-relaxed text-cream-300">
-              When I lock in, I'm unstoppable. I take the intensity of deep
-              focus and aim it at building things that matter.
+              Now I build AI products that compress what used to take a team
+              into something one person can run. I ran 60+ customer discovery
+              interviews before writing a line of PitchIQ. I study the problem
+              until the solution feels obvious, then I move fast.
             </p>
 
             <ul className="space-y-4">
