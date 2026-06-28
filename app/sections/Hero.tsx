@@ -27,7 +27,13 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
   function scrollToWork() {
     const work = document.getElementById("work");
     if (!work) return;
-    const target = work.offsetTop;
+
+    if (window.innerWidth < 768) {
+      work.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+
+    const target = work.getBoundingClientRect().top + window.scrollY;
     const start = window.scrollY;
     const distance = target - start;
     const duration = 12100;
