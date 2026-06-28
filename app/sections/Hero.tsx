@@ -28,12 +28,16 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
     const work = document.getElementById("work");
     if (!work) return;
 
+    if (window.innerWidth < 768) {
+      setTimeout(() => work.scrollIntoView({ behavior: "smooth", block: "start" }), 120);
+      return;
+    }
+
     const scrollEl = document.scrollingElement || document.documentElement;
     const start = scrollEl.scrollTop;
     const target = work.getBoundingClientRect().top + start;
     const distance = target - start;
-    const isMobile = window.innerWidth < 768;
-    const duration = isMobile ? 5000 : 12100;
+    const duration = 12100;
     let startTime: number | null = null;
 
     function easeInOut(t: number) {
