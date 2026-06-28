@@ -74,10 +74,10 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
 
   const wrap  = "pointer-events-none absolute inset-0 flex flex-col items-start justify-center";
   const introWrap = "pointer-events-none absolute inset-0 flex flex-col items-start justify-start pt-[4.5vh] md:pt-[15vh]";
-  const label = "flex flex-col items-start text-6xl font-semibold leading-[1.05] tracking-tight text-cream-100 md:text-8xl lg:text-9xl";
+  const label = "flex flex-col items-start text-7xl font-semibold leading-[1.05] tracking-tight text-cream-100 md:text-8xl lg:text-9xl";
   const body  = "text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-cream-100 md:text-5xl lg:text-6xl";
 
-  const depthButton = (
+  const depthButtonDesktop = (
     <span className="relative inline-block align-bottom">
       <motion.span
         onClick={scrollToWork}
@@ -102,6 +102,10 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
     </span>
   );
 
+  const depthButtonMobile = (
+    <span className="inline text-cream-100" style={{ textShadow: "0 4px 0 #c17a4b" }}>depth</span>
+  );
+
   return (
     <div ref={ref} className="relative h-[650vh]">
       <section className="sticky top-0 flex h-screen w-full flex-col items-center justify-center px-6 md:px-12">
@@ -112,21 +116,21 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
               <p className={`${body} max-w-3xl md:hidden`}>
                 <span className="text-5xl">A Builder</span><br />
                 Who Lives and<br />
-                Breathes {depthButton}.
+                Breathes {depthButtonMobile}.
               </p>
               <p className={`${body} max-w-3xl hidden md:block`}>
-                A builder who lives and breathes {depthButton}.
+                A builder who lives and breathes {depthButtonDesktop}.
               </p>
             </motion.div>
           )}
 
           {stage >= 1 && stage <= 3 && (
             <motion.div style={{ opacity: depthInOpacity }} className={wrap}>
-              <div className={label}>
+              <div className={`${label} md:-translate-y-0 -translate-y-12`}>
                 <span className="relative z-10">Depth in</span>
                 <div className="relative">
                   {/* invisible spacer keeps the row height equal to the longest label */}
-                  <span className="invisible text-[3.6rem] font-semibold tracking-tight leading-[1em] md:text-[4.5rem] lg:text-[5.4rem]" aria-hidden="true">Problem<br/>Solving</span>
+                  <span className="invisible text-[4.5rem] font-semibold tracking-tight leading-[1em] md:text-[4.5rem] lg:text-[5.4rem]" aria-hidden="true">Problem<br/>Solving</span>
                   {stage === 1 && (
                     <motion.div style={{ opacity: systemsOpacity, y: systemsY }} className="absolute inset-0">
                       <VideoText text="Systems" src="/Systems10.mp4" playing />
