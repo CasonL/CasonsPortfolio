@@ -13,8 +13,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://casonsportfolio.netlify.app"),
   title: "Cason Lamothe | Product Designer & AI Architect",
   description: "Portfolio of Cason Lamothe: product designer, AI systems architect, and leader building products like PitchIQ and an AI resume builder.",
+  openGraph: {
+    title: "Cason Lamothe | Builder. Operator. The guy who actually ships.",
+    description: "Product designer and AI systems architect. See how I think, what I build, and why depth is the only strategy worth having.",
+    url: "https://casonsportfolio.netlify.app",
+    siteName: "Cason Lamothe",
+    images: [
+      {
+        url: "/headshot.png",
+        width: 800,
+        height: 800,
+        alt: "Cason Lamothe",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cason Lamothe | Builder. Operator. The guy who actually ships.",
+    description: "Product designer and AI systems architect. See how I think, what I build, and why depth is the only strategy worth having.",
+    images: ["/headshot.png"],
+  },
 };
 
 export default function RootLayout({
