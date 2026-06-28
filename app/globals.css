@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --forest-950: #0f1a14;
+  --forest-900: #1a2f23;
+  --forest-800: #243d30;
+  --forest-700: #2d4a3e;
+  --forest-600: #3f644f;
+  --sage-500: #8a9a7b;
+  --cream-100: #f3e9d9;
+  --cream-200: #e9dcc5;
+  --cream-300: #d4c5a9;
+  --terracotta-500: #c17a4b;
+  --terracotta-600: #9e5f35;
+  --amber-400: #d4a35a;
+  --brown-800: #4a2c17;
+
+  --background: var(--forest-900);
+  --foreground: var(--cream-100);
+  --accent: var(--terracotta-500);
+  --accent-hover: var(--terracotta-600);
+  --muted: var(--sage-500);
+  --card: var(--forest-800);
+  --border: rgba(243, 233, 217, 0.12);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-forest-950: var(--forest-950);
+  --color-forest-900: var(--forest-900);
+  --color-forest-800: var(--forest-800);
+  --color-forest-700: var(--forest-700);
+  --color-forest-600: var(--forest-600);
+  --color-sage-500: var(--sage-500);
+  --color-cream-100: var(--cream-100);
+  --color-cream-200: var(--cream-200);
+  --color-cream-300: var(--cream-300);
+  --color-terracotta-500: var(--terracotta-500);
+  --color-terracotta-600: var(--terracotta-600);
+  --color-amber-400: var(--amber-400);
+  --color-brown-800: var(--brown-800);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--terracotta-500);
+  color: var(--forest-950);
+}
+
+.focus-ring {
+  box-shadow: 0 0 0 2px var(--terracotta-500);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--cream-100) 0%, var(--amber-400) 50%, var(--terracotta-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.noise {
+  position: relative;
+}
+
+.noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 1;
 }
