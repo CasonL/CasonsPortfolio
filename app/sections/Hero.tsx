@@ -70,28 +70,8 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
   const body  = "text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-cream-100 md:text-5xl lg:text-6xl";
 
   const depthButton = (
-    <span className="relative inline-block align-bottom">
-      <motion.span
-        onClick={scrollToWork}
-        className="pointer-events-auto inline-block cursor-pointer text-cream-100"
-        animate={{ y: [0, -2, 0], textShadow: ["0 4px 0 #c17a4b", "0 6px 0 #c17a4b", "0 4px 0 #c17a4b"] }}
-        transition={{ duration: 0.13, repeat: Infinity, repeatDelay: 1.9, ease: [0.22, 1, 0.36, 1] }}
-        whileHover={{ y: 2, textShadow: "0 2px 0 #c17a4b" }}
-        whileTap={{ y: 4, textShadow: "0 0 0 #c17a4b" }}
-      >
-        depth
-      </motion.span>
-      <motion.span
-        className="absolute left-1/2 top-full block -translate-x-1/2 pt-1 text-terracotta-500"
-        animate={{ y: [0, 3, 0] }}
-        transition={{ duration: 1, repeat: Infinity, repeatDelay: 0.5, ease: "easeInOut" }}
-        aria-hidden="true"
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 19V5" />
-          <path d="M5 12l7-7 7 7" />
-        </svg>
-      </motion.span>
+    <span className="inline-block text-cream-100">
+      depth
     </span>
   );
 
