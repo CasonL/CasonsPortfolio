@@ -28,10 +28,11 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
     const work = document.getElementById("work");
     if (!work) return;
 
-    const isMobile = window.innerWidth < 768;
-    const target = work.getBoundingClientRect().top + window.scrollY;
-    const start = window.scrollY || document.documentElement.scrollTop;
+    const scrollEl = document.scrollingElement || document.documentElement;
+    const start = scrollEl.scrollTop;
+    const target = work.getBoundingClientRect().top + start;
     const distance = target - start;
+    const isMobile = window.innerWidth < 768;
     const duration = isMobile ? 5000 : 12100;
     let startTime: number | null = null;
 
@@ -43,9 +44,7 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
       if (!startTime) startTime = currentTime;
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      const scrollY = start + distance * easeInOut(progress);
-      document.documentElement.scrollTop = scrollY;
-      window.scrollTo(0, scrollY);
+      scrollEl.scrollTop = start + distance * easeInOut(progress);
       if (progress < 1) requestAnimationFrame(animate);
     }
 
