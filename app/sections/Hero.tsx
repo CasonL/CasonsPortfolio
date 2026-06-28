@@ -28,26 +28,25 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
     const work = document.getElementById("work");
     if (!work) return;
 
-    if (window.innerWidth < 768) {
-      work.scrollIntoView({ behavior: "smooth", block: "start" });
-      return;
+    const isMobile = window.innerWidth < 768;
+    const target = work.getBoundingClientRect().top + window.scrollY;
+    const start = window.scrollY || document.documentElement.scrollTop;
+    const distance = target - start;
+    const duration = isMobile ? 5000 : 12100;
+    let startTime: number | null = null;
+
+    function easeInOut(t: number) {
+      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
     }
 
-    const target = work.getBoundingClientRect().top + window.scrollY;
-    const start = window.scrollY;
-    const distance = target - start;
-    const duration = 12100;
-    const speed = distance / duration;
-    let currentScroll = start;
-    let lastTime = performance.now();
-
     function animate(currentTime: number) {
-      const delta = Math.min(currentTime - lastTime, 50);
-      lastTime = currentTime;
-      currentScroll += speed * delta;
-      currentScroll = distance > 0 ? Math.min(currentScroll, target) : Math.max(currentScroll, target);
-      window.scrollTo(0, currentScroll);
-      if (currentScroll !== target) requestAnimationFrame(animate);
+      if (!startTime) startTime = currentTime;
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const scrollY = start + distance * easeInOut(progress);
+      document.documentElement.scrollTop = scrollY;
+      window.scrollTo(0, scrollY);
+      if (progress < 1) requestAnimationFrame(animate);
     }
 
     requestAnimationFrame(animate);
