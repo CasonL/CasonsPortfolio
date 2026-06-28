@@ -1,9 +1,21 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, ArrowUpRight } from "lucide-react";
+import { Mail, Check } from "lucide-react";
+
+const EMAIL = "casonlamothe@gmail.com";
 
 export function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  function copyEmail() {
+    navigator.clipboard.writeText(EMAIL).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    });
+  }
+
   return (
     <section id="contact" className="relative z-10 px-6 py-32 md:px-12">
       <div className="mx-auto max-w-4xl text-center">
@@ -25,17 +37,13 @@ export function Contact() {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="mailto:casonlamothe@gmail.com"
+            <button
+              onClick={copyEmail}
               className="group inline-flex items-center gap-3 rounded-full bg-terracotta-500 px-8 py-4 text-base font-semibold text-forest-950 transition-all hover:bg-amber-400 hover:shadow-lg hover:shadow-terracotta-500/20"
             >
-              <Mail size={20} />
-              Say hello
-              <ArrowUpRight
-                size={18}
-                className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
-            </a>
+              {copied ? <Check size={20} /> : <Mail size={20} />}
+              {copied ? "Email copied!" : "Say hello"}
+            </button>
             <a
               href="https://www.linkedin.com/in/cason-lamothe-7b1531302"
               target="_blank"
