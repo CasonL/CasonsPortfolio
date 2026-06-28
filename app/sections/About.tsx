@@ -25,7 +25,7 @@ export function About() {
               About
             </p>
             <h2 className="text-4xl font-semibold tracking-tight text-cream-100 md:text-5xl">
-              Hyperfocus as leverage.
+              Builder. Operator. The guy who actually ships.
             </h2>
           </motion.div>
 
@@ -37,16 +37,18 @@ export function About() {
             className="flex flex-col justify-center"
           >
             <p className="mb-6 text-lg leading-relaxed text-cream-300">
-              When I lock in, timelines compress. At 23, I ran a window cleaning
-              franchise solo for 4 months and hit $42K in revenue. Then I turned
-              that same intensity toward building PitchIQ from scratch, while
-              leading a club and finishing my degree. One cold email landed $2K
-              in sponsorship. One pattern across 60+ interviews rewrote the
-              onboarding.
+              I didn't start as a developer. I started by running a window
+              cleaning franchise at 23, knocking ~100 doors a day and figuring
+              out what makes people say yes. That experience taught me more
+              about products than any course did: if it doesn't create real
+              value for a real person, it doesn't matter how elegant the code is.
             </p>
             <p className="mb-10 text-lg leading-relaxed text-cream-300">
-              I don't just move fast; I move fast in the right direction. The
-              feedback loop is the product.
+              Now I build AI products that compress what used to take a team
+              into something one person can run. While building PitchIQ I ran
+              60+ customer discovery interviews in parallel, letting real user
+              feedback reshape the product as it was being built. I study the
+              problem until the solution feels obvious, then I move fast.
             </p>
 
             <ul className="space-y-4">
