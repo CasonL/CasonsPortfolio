@@ -30,7 +30,7 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
     const target = work.offsetTop;
     const start = window.scrollY;
     const distance = target - start;
-    const duration = 11000;
+    const duration = 12100;
     const speed = distance / duration;
     let currentScroll = start;
     let lastTime = performance.now();
