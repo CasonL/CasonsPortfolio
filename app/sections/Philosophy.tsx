@@ -7,8 +7,8 @@ const principles = [
   {
     icon: Brain,
     title: "Deep thinking is the product.",
-    hook: "I research while I build.",
-    body: "60+ customer discovery interviews run in parallel while building. That research decided which models to use, what to cut, and where the feedback loops live.",
+    hook: "I let users reshape the product in real time.",
+    body: "60+ customer discovery interviews run alongside development — each one sharpened what to cut, which models to use, and where the feedback loops needed to live.",
     stat: { value: "60+", label: "discovery interviews" },
     image: "/DeepThinking.png",
   },
