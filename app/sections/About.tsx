@@ -37,12 +37,12 @@ export function About() {
             className="flex flex-col justify-center"
           >
             <p className="mb-6 text-lg leading-relaxed text-cream-300">
-              When I lock in, timelines compress. I ran a window cleaning
-              franchise at 23, then started building PitchIQ while running a
-              club and getting my degree. Built the product from zero to launch
-              while running that $42K franchise and finishing a BCom. One cold
-              email landed $2K in sponsorship. One pattern across 60+ interviews
-              rewrote the onboarding.
+              When I lock in, timelines compress. At 23, I ran a window cleaning
+              franchise solo for 4 months and hit $42K in revenue. Then I turned
+              that same intensity toward building PitchIQ from scratch, while
+              leading a club and finishing my degree. One cold email landed $2K
+              in sponsorship. One pattern across 60+ interviews rewrote the
+              onboarding.
             </p>
             <p className="mb-10 text-lg leading-relaxed text-cream-300">
               I don't just move fast; I move fast in the right direction. The
