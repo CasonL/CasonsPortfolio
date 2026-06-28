@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const highlights = [
   "Founder of PitchIQ: built a multi-agent AI sales trainer from zero to launch",
-  "Ran a College Pro franchise solo, hitting $42K in revenue in one season",
+  "Ran a College Pro window cleaning franchise solo, hitting $42K in revenue at 23",
   "Grew MacEwan Speechleaders from 20 to 90+ members in two weeks as president",
   "Secured $2,000 in sponsorship from a single cold outreach",
   "BCom in Management and Entrepreneurship, MacEwan University",
@@ -37,17 +37,18 @@ export function About() {
             className="flex flex-col justify-center"
           >
             <p className="mb-6 text-lg leading-relaxed text-cream-300">
-              I didn't start as a developer. I started by running a painting
-              franchise at 21, knocking ~100 doors a day and figuring out what
-              makes people say yes. That experience taught me more about
-              products than any course did: if it doesn't create real value for
-              a real person, it doesn't matter how elegant the code is.
+              I didn't start as a developer. I started by running a window
+              cleaning franchise at 23, knocking ~100 doors a day and figuring
+              out what makes people say yes. That experience taught me more
+              about products than any course did: if it doesn't create real
+              value for a real person, it doesn't matter how elegant the code is.
             </p>
             <p className="mb-10 text-lg leading-relaxed text-cream-300">
               Now I build AI products that compress what used to take a team
-              into something one person can run. I ran 60+ customer discovery
-              interviews before writing a line of PitchIQ. I study the problem
-              until the solution feels obvious, then I move fast.
+              into something one person can run. While building PitchIQ I ran
+              60+ customer discovery interviews in parallel, letting real user
+              feedback reshape the product as it was being built. I study the
+              problem until the solution feels obvious, then I move fast.
             </p>
 
             <ul className="space-y-4">
