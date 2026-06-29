@@ -41,7 +41,8 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
     let startTime: number | null = null;
 
     function easeInOut(t: number) {
-      return t < 0.5 ? 16 * t ** 5 : 1 - Math.pow(-2 * t + 2, 5) / 2;
+      const ease = t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+      return 0.35 * t + 0.65 * ease;
     }
 
     function animate(currentTime: number) {
