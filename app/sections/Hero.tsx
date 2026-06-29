@@ -37,7 +37,7 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
     const start = scrollEl.scrollTop;
     const target = work.getBoundingClientRect().top + start;
     const distance = target - start;
-    const duration = 18500;
+    const duration = 13875;
     let startTime: number | null = null;
 
     function easeInOut(t: number) {
