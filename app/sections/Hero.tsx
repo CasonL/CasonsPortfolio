@@ -40,15 +40,15 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
     const duration = 13875;
     let startTime: number | null = null;
 
-    function easeOut(t: number) {
-      return 1 - Math.pow(1 - t, 3);
+    function easeInOut(t: number) {
+      return t < 0.5 ? 16 * t ** 5 : 1 - Math.pow(-2 * t + 2, 5) / 2;
     }
 
     function animate(currentTime: number) {
       if (!startTime) startTime = currentTime;
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      scrollEl.scrollTop = start + distance * easeOut(progress);
+      scrollEl.scrollTop = start + distance * easeInOut(progress);
       if (progress < 1) requestAnimationFrame(animate);
     }
 
