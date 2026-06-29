@@ -16,9 +16,9 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
   useEffect(() => {
     return scrollYProgress.on("change", (v) => {
       if (v < 0.030)      setStage(0);
-      else if (v < 0.314)  setStage(1);
-      else if (v < 0.598) setStage(2);
-      else if (v < 0.925)  setStage(3);
+      else if (v < 0.243)  setStage(1);
+      else if (v < 0.456) setStage(2);
+      else if (v < 0.701)  setStage(3);
       else                 setStage(4);
       setBackgroundPaused?.(v > 0 && v < 1);
     });
@@ -59,19 +59,19 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
   // Scroll-driven opacity + slide for the active stage.
   const introOpacity   = useTransform(scrollYProgress, [0,     0.020, 0.030],            [1, 1, 0]);
   const introY         = useTransform(scrollYProgress, [0,     0.020, 0.030],            [0, 0, -40]);
-  const depthInOpacity = useTransform(scrollYProgress, [0.030, 0.045, 0.910, 0.925],     [0, 1, 1, 0]);
-  const systemsOpacity = useTransform(scrollYProgress, [0.030, 0.045, 0.299, 0.314],     [0, 1, 1, 0]);
-  const systemsY       = useTransform(scrollYProgress, [0.030, 0.045, 0.299, 0.314],     [40, 0, 0, -40]);
-  const peopleOpacity  = useTransform(scrollYProgress, [0.314, 0.329, 0.583, 0.598],     [0, 1, 1, 0]);
-  const peopleY        = useTransform(scrollYProgress, [0.314, 0.329, 0.583, 0.598],     [40, 0, 0, -40]);
-  const problemOpacity = useTransform(scrollYProgress, [0.598, 0.613, 0.910, 0.925],     [0, 1, 1, 0]);
-  const problemY       = useTransform(scrollYProgress, [0.598, 0.613, 0.910, 0.925],     [40, 0, 0, -40]);
-  const closingOpacity = useTransform(scrollYProgress, [0.925, 0.940, 0.985, 1.000],     [0, 1, 1, 0]);
-  const closingY       = useTransform(scrollYProgress, [0.925, 0.940, 0.985, 1.000],     [40, 0, 0, -40]);
+  const depthInOpacity = useTransform(scrollYProgress, [0.030, 0.045, 0.686, 0.701],     [0, 1, 1, 0]);
+  const systemsOpacity = useTransform(scrollYProgress, [0.030, 0.045, 0.228, 0.243],     [0, 1, 1, 0]);
+  const systemsY       = useTransform(scrollYProgress, [0.030, 0.045, 0.228, 0.243],     [40, 0, 0, -40]);
+  const peopleOpacity  = useTransform(scrollYProgress, [0.243, 0.258, 0.441, 0.456],     [0, 1, 1, 0]);
+  const peopleY        = useTransform(scrollYProgress, [0.243, 0.258, 0.441, 0.456],     [40, 0, 0, -40]);
+  const problemOpacity = useTransform(scrollYProgress, [0.456, 0.471, 0.686, 0.701],     [0, 1, 1, 0]);
+  const problemY       = useTransform(scrollYProgress, [0.456, 0.471, 0.686, 0.701],     [40, 0, 0, -40]);
+  const closingOpacity = useTransform(scrollYProgress, [0.701, 0.716, 0.985, 1.000],     [0, 1, 1, 0]);
+  const closingY       = useTransform(scrollYProgress, [0.701, 0.716, 0.985, 1.000],     [40, 0, 0, -40]);
   const headshotScale  = useTransform(scrollYProgress, [0.025, 0.080],                   [1, 0.85]);
-  const headshotOpacity = useTransform(scrollYProgress, [0,    0.910, 0.925],            [1, 1, 0]);
-  const promptOpacity  = useTransform(scrollYProgress, [0.910, 0.925],                   [1, 0]);
-  const promptY        = useTransform(scrollYProgress, [0.910, 0.925],                   [0, 20]);
+  const headshotOpacity = useTransform(scrollYProgress, [0,    0.686, 0.701],            [1, 1, 0]);
+  const promptOpacity  = useTransform(scrollYProgress, [0.686, 0.701],                   [1, 0]);
+  const promptY        = useTransform(scrollYProgress, [0.686, 0.701],                   [0, 20]);
 
   const wrap  = "pointer-events-none absolute inset-0 flex flex-col items-start justify-center";
   const introWrap = "pointer-events-none absolute inset-0 flex flex-col items-start justify-start pt-[4.5vh] md:pt-[15vh]";
