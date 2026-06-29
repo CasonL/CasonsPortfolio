@@ -69,9 +69,9 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
   const closingOpacity = useTransform(scrollYProgress, [0.701, 0.716, 0.985, 1.000],     [0, 1, 1, 0]);
   const closingY       = useTransform(scrollYProgress, [0.701, 0.716, 0.985, 1.000],     [40, 0, 0, -40]);
   const headshotScale  = useTransform(scrollYProgress, [0.025, 0.080],                   [1, 0.85]);
-  const headshotOpacity = useTransform(scrollYProgress, [0,    0.686, 0.701],            [1, 1, 0]);
-  const promptOpacity  = useTransform(scrollYProgress, [0.686, 0.701],                   [1, 0]);
-  const promptY        = useTransform(scrollYProgress, [0.686, 0.701],                   [0, 20]);
+  const headshotOpacity = useTransform(scrollYProgress, [0,    0.020, 0.050],            [1, 1, 0]);
+  const promptOpacity  = useTransform(scrollYProgress, [0.020, 0.050],                   [1, 0]);
+  const promptY        = useTransform(scrollYProgress, [0.020, 0.050],                   [0, 20]);
 
   const wrap  = "pointer-events-none absolute inset-0 flex flex-col items-start justify-center";
   const introWrap = "pointer-events-none absolute inset-0 flex flex-col items-start justify-start pt-[4.5vh] md:pt-[15vh]";
