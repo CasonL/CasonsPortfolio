@@ -18,7 +18,7 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
       if (v < 0.030)      setStage(0);
       else if (v < 0.243)  setStage(1);
       else if (v < 0.456) setStage(2);
-      else if (v < 0.701)  setStage(3);
+      else if (v < 0.671)  setStage(3);
       else                 setStage(4);
       setBackgroundPaused?.(v > 0 && v < 1);
     });
@@ -63,15 +63,15 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
   // Scroll-driven opacity + slide for the active stage.
   const introOpacity   = useTransform(scrollYProgress, [0,     0.020, 0.030],            [1, 1, 0]);
   const introY         = useTransform(scrollYProgress, [0,     0.020, 0.030],            [0, 0, -40]);
-  const depthInOpacity = useTransform(scrollYProgress, [0.030, 0.045, 0.686, 0.701],     [0, 1, 1, 0]);
+  const depthInOpacity = useTransform(scrollYProgress, [0.030, 0.045, 0.656, 0.671],     [0, 1, 1, 0]);
   const systemsOpacity = useTransform(scrollYProgress, [0.030, 0.045, 0.228, 0.243],     [0, 1, 1, 0]);
   const systemsY       = useTransform(scrollYProgress, [0.030, 0.045, 0.228, 0.243],     [40, 0, 0, -40]);
   const peopleOpacity  = useTransform(scrollYProgress, [0.243, 0.258, 0.441, 0.456],     [0, 1, 1, 0]);
   const peopleY        = useTransform(scrollYProgress, [0.243, 0.258, 0.441, 0.456],     [40, 0, 0, -40]);
-  const problemOpacity = useTransform(scrollYProgress, [0.456, 0.471, 0.686, 0.701],     [0, 1, 1, 0]);
-  const problemY       = useTransform(scrollYProgress, [0.456, 0.471, 0.686, 0.701],     [40, 0, 0, -40]);
-  const closingOpacity = useTransform(scrollYProgress, [0.701, 0.716, 0.985, 1.000],     [0, 1, 1, 0]);
-  const closingY       = useTransform(scrollYProgress, [0.701, 0.716, 0.985, 1.000],     [40, 0, 0, -40]);
+  const problemOpacity = useTransform(scrollYProgress, [0.456, 0.471, 0.656, 0.671],     [0, 1, 1, 0]);
+  const problemY       = useTransform(scrollYProgress, [0.456, 0.471, 0.656, 0.671],     [40, 0, 0, -40]);
+  const closingOpacity = useTransform(scrollYProgress, [0.671, 0.686, 0.985, 1.000],     [0, 1, 1, 0]);
+  const closingY       = useTransform(scrollYProgress, [0.671, 0.686, 0.985, 1.000],     [40, 0, 0, -40]);
   const headshotScale  = useTransform(scrollYProgress, [0.025, 0.080],                   [1, 0.85]);
   const headshotOpacity = useTransform(scrollYProgress, [0,    0.900, 1.000],            [1, 1, 0]);
   const promptOpacity  = useTransform(scrollYProgress, [0, 0.020],                       [1, 0]);
