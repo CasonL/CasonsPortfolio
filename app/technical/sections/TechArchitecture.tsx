@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { CollapsibleDiagram } from "../components/CollapsibleDiagram";
 
 export function TechArchitecture() {
   return (
@@ -69,6 +70,14 @@ export function TechArchitecture() {
                 <line x1="300" y1="190" x2="300" y2="220" stroke="#f3e9d9" strokeOpacity="0.3" strokeWidth="1.5" />
                 <line x1="300" y1="260" x2="300" y2="280" stroke="#f3e9d9" strokeOpacity="0.3" strokeWidth="1.5" />
               </svg>
+            </div>
+
+            <div className="mb-12">
+              <CollapsibleDiagram
+                title="Full call lifecycle"
+                src="/pitchiq_full_call_lifecycle.png"
+                alt="PitchIQ full call lifecycle diagram"
+              />
             </div>
 
             <div>
