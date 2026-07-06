@@ -39,42 +39,9 @@ export function TechArchitecture() {
               </p>
             </div>
 
-            <div className="mb-12 rounded-2xl border border-border/40 bg-forest-900/60 p-6 backdrop-blur-sm">
-              <h3 className="mb-4 text-xl font-semibold text-cream-100">System diagram</h3>
-              <svg viewBox="0 0 600 320" className="w-full" aria-label="PitchIQ architecture diagram">
-                <rect x="220" y="10" width="160" height="40" rx="8" fill="rgba(193,122,75,0.15)" stroke="#c17a4b" strokeWidth="1.5" />
-                <text x="300" y="35" textAnchor="middle" fill="#f3e9d9" fontSize="13" fontWeight="500">User (web app)</text>
-
-                <rect x="220" y="80" width="160" height="40" rx="8" fill="rgba(193,122,75,0.15)" stroke="#c17a4b" strokeWidth="1.5" />
-                <text x="300" y="105" textAnchor="middle" fill="#f3e9d9" fontSize="13" fontWeight="500">Flask API (Render)</text>
-
-                <rect x="40" y="150" width="140" height="40" rx="8" fill="rgba(243,233,217,0.08)" stroke="#f3e9d9" strokeWidth="1" strokeOpacity="0.3" />
-                <text x="110" y="175" textAnchor="middle" fill="#f3e9d9" fontSize="12" fontWeight="500">Deepgram</text>
-
-                <rect x="230" y="150" width="140" height="40" rx="8" fill="rgba(243,233,217,0.08)" stroke="#f3e9d9" strokeWidth="1" strokeOpacity="0.3" />
-                <text x="300" y="175" textAnchor="middle" fill="#f3e9d9" fontSize="12" fontWeight="500">GPT-4o / Claude</text>
-
-                <rect x="420" y="150" width="140" height="40" rx="8" fill="rgba(243,233,217,0.08)" stroke="#f3e9d9" strokeWidth="1" strokeOpacity="0.3" />
-                <text x="490" y="175" textAnchor="middle" fill="#f3e9d9" fontSize="12" fontWeight="500">Cartesia</text>
-
-                <rect x="230" y="220" width="140" height="40" rx="8" fill="rgba(243,233,217,0.08)" stroke="#f3e9d9" strokeWidth="1" strokeOpacity="0.3" />
-                <text x="300" y="245" textAnchor="middle" fill="#f3e9d9" fontSize="12" fontWeight="500">PostgreSQL</text>
-
-                <rect x="220" y="280" width="160" height="30" rx="6" fill="rgba(193,122,75,0.1)" stroke="#c17a4b" strokeWidth="1" strokeDasharray="4 4" />
-                <text x="300" y="298" textAnchor="middle" fill="#f3e9d9" fontSize="12" fontWeight="500">Netlify key proxies</text>
-
-                <line x1="300" y1="50" x2="300" y2="80" stroke="#f3e9d9" strokeOpacity="0.3" strokeWidth="1.5" />
-                <line x1="300" y1="120" x2="110" y2="150" stroke="#f3e9d9" strokeOpacity="0.3" strokeWidth="1.5" />
-                <line x1="300" y1="120" x2="300" y2="150" stroke="#f3e9d9" strokeOpacity="0.3" strokeWidth="1.5" />
-                <line x1="300" y1="120" x2="490" y2="150" stroke="#f3e9d9" strokeOpacity="0.3" strokeWidth="1.5" />
-                <line x1="300" y1="190" x2="300" y2="220" stroke="#f3e9d9" strokeOpacity="0.3" strokeWidth="1.5" />
-                <line x1="300" y1="260" x2="300" y2="280" stroke="#f3e9d9" strokeOpacity="0.3" strokeWidth="1.5" />
-              </svg>
-            </div>
-
             <div className="mb-12">
               <CollapsibleDiagram
-                title="Full call lifecycle"
+                title="System diagram"
                 src="/pitchiq_full_call_lifecycle.png"
                 alt="PitchIQ full call lifecycle diagram"
               />

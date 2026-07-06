@@ -40,11 +40,20 @@ export function CollapsibleDiagram({
             className="overflow-hidden"
           >
             <div className="px-6 pb-6">
-              <img
-                src={src}
-                alt={alt}
-                className="w-full rounded-xl border border-border/60"
-              />
+              <div className="relative overflow-hidden rounded-xl border border-border/60">
+                <div
+                  className="pointer-events-none absolute inset-0 -z-10 opacity-30"
+                  style={{
+                    background:
+                      "radial-gradient(circle at 50% 40%, rgba(243, 233, 217, 0.6), rgba(193, 122, 75, 0.15) 40%, transparent 75%)",
+                  }}
+                />
+                <img
+                  src={src}
+                  alt={alt}
+                  className="relative z-10 w-full"
+                />
+              </div>
               <p className="mt-4 text-sm text-sage-500">
                 Full call lifecycle for PitchIQ: user setup, WebSocket connection, Deepgram voice agent, model routing, state tracking, and post-call feedback.
               </p>
