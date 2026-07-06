@@ -16,7 +16,7 @@ const principles = [
     icon: Layers,
     title: "Affordable models, multiplied.",
     hook: "The right model for each job.",
-    body: "PitchIQ orchestrates specialized models for scenario generation, persona simulation, and real-time coaching, all in parallel. No single expensive model. Just a sales diagnostic tool that runs realistic AI roleplays and pinpoints exactly where a rep needs to improve.",
+    body: "PitchIQ orchestrates specialized models for scenario generation, persona simulation, and real-time coaching, all in parallel. No single expensive model. The roleplay is just the input; the output is a precise diagnosis of where a rep needs to improve.",
     stat: { value: "¢5", label: "per coached call" },
     image: "/AffordableCard.png",
   },

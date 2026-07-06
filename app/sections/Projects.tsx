@@ -6,14 +6,14 @@ import { Mic2, FileText } from "lucide-react";
 const projects = [
   {
     title: "PitchIQ",
-    tagline: "A sales diagnostic tool with realistic AI roleplays and personalized coaching.",
+    tagline: "Diagnoses exactly where sales reps lose deals, using realistic AI roleplay as the input.",
     description:
-      "Built a multi-agent system where specialized LLMs handle scenario generation, persona simulation, real-time coaching feedback, and progress tracking. Reps get diagnosed on real weaknesses through lifelike practice, at a fraction of the cost of human coaching.",
+      "Built a multi-agent system where specialized LLMs handle scenario generation, persona simulation, real-time coaching feedback, and progress tracking. The roleplay is just the vehicle; the value is the diagnosis, delivered at a fraction of the cost of human coaching.",
     link: "https://PitchIQ.ca",
     icon: Mic2,
     image: "/pitchiq-screenshot.png",
     stats: [
-      { label: "Focus", value: "Sales diagnostic + AI roleplay" },
+      { label: "Focus", value: "Sales diagnosis via AI roleplay" },
       { label: "Architecture", value: "Multi-agent LLM orchestration" },
       { label: "Outcome", value: "Scalable, human-like training" },
     ],

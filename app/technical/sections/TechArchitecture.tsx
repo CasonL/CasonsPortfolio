@@ -12,7 +12,7 @@ export function TechArchitecture() {
             Architecture
           </p>
           <h2 className="text-4xl font-semibold tracking-tight text-cream-100 md:text-5xl">
-            PitchIQ: sales diagnostic tool with AI roleplays.
+            PitchIQ: diagnosing reps, using roleplay as the vehicle.
           </h2>
         </div>
 
@@ -26,16 +26,16 @@ export function TechArchitecture() {
             <div className="mb-12">
               <h3 className="mb-3 text-xl font-semibold text-cream-100">Problem</h3>
               <p className="text-cream-300">
-                Sales reps need realistic practice, but human coaching is expensive and inconsistent.
-                Reps either rehearse alone or wait days for feedback.
+                Sales reps don&apos;t know exactly why they&apos;re losing deals. Human coaching is expensive, inconsistent, and rarely diagnostic.
+                Reps either rehearse alone or wait days for vague feedback.
               </p>
             </div>
 
             <div className="mb-12">
               <h3 className="mb-3 text-xl font-semibold text-cream-100">System</h3>
               <p className="text-cream-300">
-                A sales diagnostic tool built on voice-to-voice AI roleplays. It simulates buyers, adapts difficulty, tracks performance,
-                and generates structured post-call coaching that pinpoints exactly where a rep is weak.
+                The call itself is just the vehicle. A voice-to-voice AI roleplay simulates a buyer, adapts difficulty, and tracks
+                performance in order to generate the real product: a structured diagnosis of exactly where a rep is losing the deal.
               </p>
             </div>
 
@@ -74,8 +74,8 @@ export function TechArchitecture() {
                 <li className="flex items-start gap-3">
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-terracotta-500" />
                   <div>
-                    <span className="font-medium text-cream-100">Feedback / scoring agent</span>
-                    <p className="text-sm text-sage-500">Turns the conversation into structured coaching, not generic AI advice.</p>
+                    <span className="font-medium text-cream-100">Feedback / scoring agent — the actual product</span>
+                    <p className="text-sm text-sage-500">Turns the call transcript into a precise diagnosis of what went wrong, not generic AI advice.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">

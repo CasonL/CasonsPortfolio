@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://casonsportfolio.netlify.app"),
   title: "Cason Lamothe | Product Designer & AI Architect",
-  description: "Portfolio of Cason Lamothe: product designer, AI systems architect, and leader building products like PitchIQ, a sales diagnostic tool with realistic AI roleplays, and an AI resume builder.",
+  description: "Portfolio of Cason Lamothe: product designer, AI systems architect, and leader building products like PitchIQ, which diagnoses exactly where sales reps lose deals using realistic AI roleplay as the input, and an AI resume builder.",
   openGraph: {
     title: "Cason Lamothe | Builder. Operator. The guy who actually ships.",
     description: "Product designer and AI systems architect. See how I think, what I build, and why depth is the only strategy worth having.",
