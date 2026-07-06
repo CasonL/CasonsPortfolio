@@ -6,9 +6,9 @@ import { Mic2, FileText, ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "PitchIQ",
-    tagline: "AI sales trainer with voice-to-voice roleplay and adaptive coaching.",
+    tagline: "A sales diagnostic tool with realistic AI roleplays and adaptive coaching.",
     description:
-      "A multi-agent voice system where separate models handle the live buyer persona, the coach, scenario generation, and post-call feedback. Built with Python/Flask, orchestrated on Render, and proxied through Netlify serverless functions.",
+      "A multi-agent voice system where separate models handle the live buyer persona, the coach, scenario generation, and post-call feedback. Diagnoses a rep's real weaknesses through lifelike roleplay. Built with Python/Flask, orchestrated on Render, and proxied through Netlify serverless functions.",
     link: "https://PitchIQ.ca",
     icon: Mic2,
     image: "/pitchiq-screenshot.png",

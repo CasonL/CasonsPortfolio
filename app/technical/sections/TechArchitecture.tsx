@@ -12,7 +12,7 @@ export function TechArchitecture() {
             Architecture
           </p>
           <h2 className="text-4xl font-semibold tracking-tight text-cream-100 md:text-5xl">
-            PitchIQ: AI sales trainer.
+            PitchIQ: sales diagnostic tool with AI roleplays.
           </h2>
         </div>
 
@@ -34,8 +34,8 @@ export function TechArchitecture() {
             <div className="mb-12">
               <h3 className="mb-3 text-xl font-semibold text-cream-100">System</h3>
               <p className="text-cream-300">
-                A voice-to-voice AI roleplay platform that simulates buyers, adapts difficulty, tracks performance,
-                and generates structured post-call coaching. The experience feels like a senior sales coach in your pocket.
+                A sales diagnostic tool built on voice-to-voice AI roleplays. It simulates buyers, adapts difficulty, tracks performance,
+                and generates structured post-call coaching that pinpoints exactly where a rep is weak.
               </p>
             </div>
 

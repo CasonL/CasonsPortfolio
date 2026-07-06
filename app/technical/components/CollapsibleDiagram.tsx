@@ -48,7 +48,7 @@ export function CollapsibleDiagram({
                 />
               </div>
               <p className="mt-4 text-sm text-sage-500">
-                Full call lifecycle for PitchIQ: user setup, WebSocket connection, Deepgram voice agent, model routing, state tracking, and post-call feedback.
+                Full call lifecycle for PitchIQ, the sales diagnostic tool: user setup, WebSocket connection, Deepgram voice agent, model routing, state tracking, and post-call feedback.
               </p>
             </div>
           </motion.div>
