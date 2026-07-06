@@ -34,6 +34,14 @@ export function Navigation() {
           ))}
           <li>
             <a
+              href="/technical"
+              className="text-sm text-sage-500 transition-colors hover:text-cream-100"
+            >
+              Technical
+            </a>
+          </li>
+          <li>
+            <a
               href="#contact"
               className="rounded-full bg-terracotta-500 px-4 py-2 text-sm font-medium text-forest-950 transition-colors hover:bg-amber-400"
             >
@@ -71,6 +79,15 @@ export function Navigation() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/technical"
+                  className="block text-lg text-sage-500"
+                  onClick={() => setOpen(false)}
+                >
+                  Technical
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}
