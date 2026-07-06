@@ -43,11 +43,11 @@ export function TechHero() {
             </p>
           </div>
 
-          <div className="mt-auto flex w-full flex-col items-center pt-8">
+          <div className="flex w-full flex-1 flex-col items-center justify-end pt-6">
             <img
               src="/headshot.png"
               alt="Cason Lamothe"
-              className="max-h-[38vh] w-auto object-contain"
+              className="h-full min-h-[200px] w-auto object-contain object-bottom"
             />
             <div className="-mx-6 h-8 w-[calc(100%+3rem)] bg-terracotta-500/15" />
           </div>
