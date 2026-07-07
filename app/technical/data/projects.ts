@@ -1,0 +1,38 @@
+import { Mic2, FileText } from "lucide-react";
+
+export const projects = [
+  {
+    slug: "pitchiq",
+    title: "PitchIQ",
+    tagline: "Diagnoses exactly where a rep is losing deals. Realistic AI roleplay is the instrument, not the product.",
+    description:
+      "A multi-agent voice system where separate models handle the live buyer persona, the coach, scenario generation, and post-call feedback. The call generates the signal; the feedback engine turns that signal into a specific, actionable diagnosis. Built with Python/Flask, orchestrated on Render, and proxied through Netlify serverless functions.",
+    link: "https://PitchIQ.ca",
+    icon: Mic2,
+    image: "/pitchiq-screenshot.png",
+    stats: [
+      { label: "Stack", value: "Python, Flask, Postgres" },
+      { label: "Voice", value: "Deepgram + Cartesia" },
+      { label: "LLMs", value: "GPT-4o + Claude" },
+      { label: "Cost", value: "~¢5 per coached call" },
+    ],
+  },
+  {
+    slug: "ai-resume-builder",
+    title: "AI Resume Builder",
+    tagline: "Resume-to-job matching via structured LLM reasoning and document generation.",
+    description:
+      "A Next.js app that parses PDFs and DOCX, extracts job requirements, and rewrites resumes to fit. Stripe billing, encrypted Supabase storage, and a chat interface for iterative refinement.",
+    link: "https://resume-builder-six-kohl.vercel.app/",
+    icon: FileText,
+    image: "/resume-screenshot.png",
+    stats: [
+      { label: "Stack", value: "Next.js 16, React 19" },
+      { label: "Backend", value: "Next.js API Routes" },
+      { label: "Data", value: "Supabase + crypto-js" },
+      { label: "Billing", value: "Stripe" },
+    ],
+  },
+] as const;
+
+export type Project = (typeof projects)[number];

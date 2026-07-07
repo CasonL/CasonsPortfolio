@@ -39,7 +39,10 @@ export function TechHero() {
             </h1>
             <p className="text-center text-base leading-relaxed text-cream-300">
               I built a voice-to-voice AI sales trainer solo — sub-¢5 per call, six models orchestrated in parallel,
-              live in production. I care about the layer most people skip: state management, model routing, and latency.
+              live in production.{" "}
+              <span className="hidden md:inline">
+                I care about the layer most people skip: state management, model routing, and latency.
+              </span>
             </p>
           </div>
 
