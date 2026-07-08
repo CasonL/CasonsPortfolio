@@ -14,7 +14,7 @@ export const projects = [
       { label: "Stack", value: "Python, Flask, Postgres" },
       { label: "Voice", value: "Deepgram + Cartesia" },
       { label: "LLMs", value: "GPT-4o + Claude" },
-      { label: "Cost", value: "~¢5 per coached call" },
+      { label: "Cost", value: "~¢10 per coached call" },
     ],
   },
   {

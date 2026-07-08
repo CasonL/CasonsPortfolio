@@ -115,7 +115,7 @@ export function TechArchitecture() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-amber-400" />
-                  <span className="text-cream-300">Model routing and caching to keep the cost per coached call around ¢5.</span>
+                  <span className="text-cream-300">Model routing and caching to keep the cost per coached call around ¢10.</span>
                 </li>
               </ul>
             </div>

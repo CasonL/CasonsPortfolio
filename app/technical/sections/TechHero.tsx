@@ -14,7 +14,7 @@ export function TechHero() {
               I build AI systems that reason, speak, and ship.
             </h1>
             <p className="max-w-2xl text-lg leading-relaxed text-cream-300 md:text-xl">
-              I built a voice-to-voice AI sales trainer solo — sub-¢5 per call, six models orchestrated in parallel,
+              I built a voice-to-voice AI sales trainer solo — sub-¢10 per call, six models orchestrated in parallel,
               live in production. I care about the layer most people skip: state management, model routing, and latency.
             </p>
           </div>
@@ -38,7 +38,7 @@ export function TechHero() {
               I build AI systems that reason, speak, and ship.
             </h1>
             <p className="text-center text-base leading-relaxed text-cream-300">
-              I built a voice-to-voice AI sales trainer solo — sub-¢5 per call, six models orchestrated in parallel,
+              I built a voice-to-voice AI sales trainer solo — sub-¢10 per call, six models orchestrated in parallel,
               live in production.{" "}
               <span className="hidden md:inline">
                 I care about the layer most people skip: state management, model routing, and latency.
