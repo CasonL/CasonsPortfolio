@@ -129,38 +129,31 @@ export function Hero({ setBackgroundPaused }: { setBackgroundPaused?: (paused: b
             </motion.div>
           )}
 
-          {stage >= 1 && stage <= 3 && (
-            <motion.div style={{ opacity: depthInOpacity }} className={wrap}>
-              <div className={`${label} md:-translate-y-0 -translate-y-12`}>
-                <span className="relative z-10">Depth in</span>
-                <div className="relative">
-                  {/* invisible spacer keeps the row height equal to the longest label */}
-                  <span className="invisible text-[4.5rem] font-semibold tracking-tight leading-[1em] md:text-[4.5rem] lg:text-[5.4rem]" aria-hidden="true">Problem<br/>Solving</span>
-                  {stage === 1 && (
-                    <motion.div style={{ opacity: systemsOpacity, y: systemsY }} className="absolute inset-0">
-                      <VideoText text="Systems" src="/Systems10.mp4" playing />
-                    </motion.div>
-                  )}
-                  {stage === 2 && (
-                    <motion.div style={{ opacity: peopleOpacity, y: peopleY }} className="absolute inset-0">
-                      <VideoText text="People" src="/People3.mp4" playing playbackRate={1} />
-                    </motion.div>
-                  )}
-                  {stage === 3 && (
-                    <motion.div style={{ opacity: problemOpacity, y: problemY }} className="absolute inset-0">
-                      <VideoText
-                        text={`Problem\nSolving`}
-                        src="/ProblemSolving2.mp4"
-                        playing
-                        textClassName="text-[3.6rem] font-semibold tracking-tight md:text-[4.5rem] lg:text-[5.4rem]"
-                        align="left"
-                      />
-                    </motion.div>
-                  )}
-                </div>
+          <motion.div style={{ opacity: depthInOpacity }} className={wrap}>
+            <div className={`${label} md:-translate-y-0 -translate-y-12`}>
+              <span className="relative z-10">Depth in</span>
+              <div className="relative">
+                {/* invisible spacer keeps the row height equal to the longest label */}
+                <span className="invisible text-[4.5rem] font-semibold tracking-tight leading-[1em] md:text-[4.5rem] lg:text-[5.4rem]" aria-hidden="true">Problem<br/>Solving</span>
+                <motion.div style={{ opacity: systemsOpacity, y: systemsY }} className="absolute inset-0">
+                  <VideoText text="Systems" src="/Systems10.mp4" playing preload="auto" />
+                </motion.div>
+                <motion.div style={{ opacity: peopleOpacity, y: peopleY }} className="absolute inset-0">
+                  <VideoText text="People" src="/People3.mp4" playing playbackRate={1} preload="auto" />
+                </motion.div>
+                <motion.div style={{ opacity: problemOpacity, y: problemY }} className="absolute inset-0">
+                  <VideoText
+                    text={`Problem\nSolving`}
+                    src="/ProblemSolving2.mp4"
+                    playing
+                    preload="auto"
+                    textClassName="text-[3.6rem] font-semibold tracking-tight md:text-[4.5rem] lg:text-[5.4rem]"
+                    align="left"
+                  />
+                </motion.div>
               </div>
-            </motion.div>
-          )}
+            </div>
+          </motion.div>
 
           {stage === 4 && (
             <motion.div style={{ opacity: closingOpacity, y: closingY }} className={wrap}>
