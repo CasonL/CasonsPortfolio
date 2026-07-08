@@ -23,7 +23,7 @@ export function TechHero() {
         <img
           src="/headshot.png"
           alt="Cason Lamothe"
-          className="pointer-events-none absolute bottom-16 left-[7%] z-10 hidden max-h-[75vh] w-auto origin-bottom object-contain object-bottom md:block"
+          className="pointer-events-none absolute bottom-8 left-[7%] z-10 hidden max-h-[75vh] w-auto origin-bottom object-contain object-bottom md:block"
         />
 
         <div className="absolute bottom-0 left-0 right-0 z-0 hidden h-8 w-full bg-terracotta-500/15 md:block" />
