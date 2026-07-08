@@ -3,7 +3,6 @@
 import { AnimatedBackground } from "../components/AnimatedBackground";
 import { Footer } from "../components/Footer";
 import { TechnicalNavigation } from "../components/TechnicalNavigation";
-import { TechArchitecture } from "./sections/TechArchitecture";
 import { TechBuilt } from "./sections/TechBuilt";
 import { TechContact } from "./sections/TechContact";
 import { TechHero } from "./sections/TechHero";
@@ -19,7 +18,6 @@ export default function Technical() {
         <TechHero />
         <TechProjects />
         <TechStack />
-        <TechArchitecture />
         <TechBuilt />
         <TechContact />
       </main>
