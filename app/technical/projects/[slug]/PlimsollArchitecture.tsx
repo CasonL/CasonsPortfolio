@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { CollapsibleDiagram } from "../../components/CollapsibleDiagram";
 
-export function PitchIQArchitecture() {
+export function PlimsollArchitecture() {
   return (
     <div className="mt-16">
       <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-sage-500">
@@ -39,8 +39,8 @@ export function PitchIQArchitecture() {
           <div className="mb-12">
             <CollapsibleDiagram
               title="System diagram"
-              src="/pitchiq_per_turn_ground_truth.png"
-              alt="PitchIQ per-turn ground truth flow chart"
+              src="/plimsoll_per_turn_ground_truth.png"
+              alt="Plimsoll per-turn ground truth flow chart"
             />
           </div>
 

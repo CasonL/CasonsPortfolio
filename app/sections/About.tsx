@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const highlights = [
-  "Built PitchIQ from zero to launch while running a franchise and finishing a degree",
+  "Built Plimsoll from zero to launch while running a franchise and finishing a degree",
   "Turned one cold email into $2K in sponsorship",
   "Found one onboarding pattern across 60+ interviews that rewrote the product",
   "Grew MacEwan Speechleaders from 20 to 90+ members in two weeks as president",
@@ -45,7 +45,7 @@ export function About() {
             </p>
             <p className="mb-10 text-lg leading-relaxed text-cream-300">
               Now I build AI products that compress what used to take a team
-              into something one person can run. While building PitchIQ I ran
+              into something one person can run. While building Plimsoll I ran
               60+ customer discovery interviews in parallel, letting real user
               feedback reshape the product as it was being built. I study the
               problem until the solution feels obvious, then I move fast.

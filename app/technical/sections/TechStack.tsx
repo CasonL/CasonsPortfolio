@@ -13,17 +13,17 @@ const stack = [
   {
     category: "Backend & frameworks",
     items: [
-      { name: "Flask", used: "PitchIQ main API on Render" },
+      { name: "Flask", used: "Plimsoll main API on Render" },
       { name: "Next.js 16 (App Router)", used: "Resume Builder frontend and API routes" },
       { name: "React 19", used: "Component UI for both products" },
-      { name: "SQLAlchemy + Flask-Migrate", used: "ORM and migrations for PitchIQ" },
+      { name: "SQLAlchemy + Flask-Migrate", used: "ORM and migrations for Plimsoll" }
     ],
   },
   {
     category: "Data & auth",
     items: [
-      { name: "PostgreSQL", used: "Production database for PitchIQ" },
-      { name: "SQLite", used: "Local dev and in-memory testing for PitchIQ" },
+      { name: "PostgreSQL", used: "Production database for Plimsoll" },
+      { name: "SQLite", used: "Local dev and in-memory testing for Plimsoll" },
       { name: "Supabase", used: "Auth, Postgres, and user data for Resume Builder" },
       { name: "crypto-js", used: "Encrypts stored resume data" },
     ],
@@ -32,20 +32,20 @@ const stack = [
     category: "AI / LLMs",
     items: [
       { name: "OpenAI GPT-4o", used: "Persona generation, resume writing, chat, vision trimming" },
-      { name: "Anthropic Claude", used: "Alternative LLM in PitchIQ; resume chat assistant" },
+      { name: "Anthropic Claude", used: "Alternative LLM in Plimsoll; resume chat assistant" }
     ],
   },
   {
     category: "Voice pipeline",
     items: [
-      { name: "Deepgram", used: "STT and voice agent for PitchIQ" },
-      { name: "Cartesia", used: "TTS for PitchIQ buyer/coach voices" },
+      { name: "Deepgram", used: "STT and voice agent for Plimsoll" },
+      { name: "Cartesia", used: "TTS for Plimsoll buyer/coach voices" },
     ],
   },
   {
     category: "Deployment & infra",
     items: [
-      { name: "Render", used: "PitchIQ Flask app hosting" },
+      { name: "Render", used: "Plimsoll Flask app hosting" },
       { name: "Netlify", used: "Portfolio site and serverless key proxies" },
       { name: "Vercel", used: "Resume Builder deployment" },
     ],

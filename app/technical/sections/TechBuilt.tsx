@@ -33,7 +33,7 @@ export function TechBuilt() {
               debugging, implementation decisions, and shipping. I did not hand this off to a model and hope.
             </p>
             <p className="mb-10 text-lg leading-relaxed text-cream-300">
-              For PitchIQ specifically: I designed and built the core product flow, AI orchestration logic,
+              For Plimsoll specifically: I designed and built the core product flow, AI orchestration logic,
               prompt/state system, feedback structure, voice pipeline integration, and deployment workflow.
             </p>
             <ul className="space-y-4">

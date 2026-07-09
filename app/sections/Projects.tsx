@@ -5,13 +5,13 @@ import { Mic2, FileText } from "lucide-react";
 
 const projects = [
   {
-    title: "PitchIQ",
-    tagline: "Diagnoses exactly where sales reps lose deals, using realistic AI roleplay as the input.",
+    title: "Plimsoll",
+    tagline: "See exactly where your reps lose deals. Live AI buyer calls, then a precise diagnosis of every missed moment.",
     description:
       "Built a multi-agent system where specialized LLMs handle scenario generation, persona simulation, real-time coaching feedback, and progress tracking. The roleplay is just the vehicle; the value is the diagnosis, delivered at a fraction of the cost of human coaching.",
-    link: "https://PitchIQ.ca",
+    link: "https://plimsoll.ai",
     icon: Mic2,
-    image: "/pitchiq-screenshot.png",
+    image: "/plimsoll-screenshot.png",
     stats: [
       { label: "Focus", value: "Sales diagnosis via AI roleplay" },
       { label: "Architecture", value: "Multi-agent LLM orchestration" },

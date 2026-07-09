@@ -6,7 +6,7 @@ import { projects } from "../../data/projects";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PitchIQArchitecture } from "./PitchIQArchitecture";
+import { PlimsollArchitecture } from "./PlimsollArchitecture";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -34,7 +34,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <AnimatedBackground paused={false} />
       <TechnicalNavigation />
       <main className="relative z-10 flex-1 px-6 pt-28 pb-20 md:px-12 md:pt-40">
-        <div className={`mx-auto ${slug === "pitchiq" ? "max-w-7xl" : "max-w-3xl"}`}>
+        <div className={`mx-auto ${slug === "plimsoll" ? "max-w-7xl" : "max-w-3xl"}`}>
           <Link
             href="/technical"
             className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-sage-500 transition-colors hover:text-cream-100"
@@ -89,7 +89,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             Visit live site <ExternalLink size={16} />
           </a>
 
-          {slug === "pitchiq" && <PitchIQArchitecture />}
+          {slug === "plimsoll" && <PlimsollArchitecture />}
         </div>
       </main>
       <Footer />

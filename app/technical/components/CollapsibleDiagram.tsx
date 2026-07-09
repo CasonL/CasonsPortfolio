@@ -48,7 +48,7 @@ export function CollapsibleDiagram({
                 />
               </div>
               <p className="mt-4 text-sm text-sage-500">
-                Per-turn ground truth flow for PitchIQ: user setup, WebSocket connection, Deepgram voice agent, model routing, state tracking, and post-call feedback.
+                Per-turn ground truth flow for Plimsoll: user setup, WebSocket connection, Deepgram voice agent, model routing, state tracking, and post-call feedback.
               </p>
             </div>
           </motion.div>
